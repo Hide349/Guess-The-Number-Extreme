@@ -3,7 +3,7 @@
 
 </h1>
 
-<h2 align="center">
+<h2 align="center"/>
     <img src="./assets/game.gif" width="400" heigth="200"/>
 </h2>
 
