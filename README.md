@@ -11,7 +11,7 @@
 - [Clonar](#recycle-clonar)
 - [Cronômetro](#stopwatch-cronômetro)
 - [Chutes](#1234-chutes)
-- [Alternando-Jogadores](#a-alternando-jogadores)
+- [Alternando-Jogadores](#a-alternando-jogadores-b)
 - [Somador-de-Coordenadas](#plus-somador-de-coordenadas)
 - [Fim-de-Jogo](#video_game-fim-de-jogo)
 ## :books: Sobre
@@ -105,7 +105,7 @@ O primeiro estado seria o chutando x, com o and dois barrado (00), o segundo est
 <p>
 <p>Um valor com 4 bits será passado, o que precisamos fazer é direcionalo para o flip flop correto. Por isso, o clock dele, ou seja, oque decide se ele pode ser ou não atualizado é um and que consiste do estado dele, um not verificado(apenas por garantia) e o botão chutar. Isso garante que apenas seja atualizado o valor quando estiver no estado correto e o botão chutar for pressioando.<b>A mesma coisa vale para y</b>.Depois disso é só mostrar o valor, fazendo com que o bit a3 seja o negativo ou positivo</p>
 
-## :a: Alternando Jogadores
+## :a: Alternando Jogadores :b:
 
 <p>Para alternar entre dois jogadores teremos que utilizar dois flips flops, mas por que se são só dois estados? Na verdade, é importante lembrar que cada jogador tem o estado chutando x e chutando y. Então na verdade são 4 estados.</p>
 
