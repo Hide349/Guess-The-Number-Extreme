@@ -6,13 +6,13 @@
 
 ## Índice
 
-- [Sobre](#sobre)
+- [Sobre](#books-Sobre)
 
 
 
 
 
-## Sobre
+## :books: Sobre
 
 Uma versão melhorada do primeiro projeto, (https://github.com/Hide349/Projeto_Circuitos_Digitais). Nesse jogo algumas coisas foram adicionadas, como por exemplo um cronômetro, placar, valores negativos e duas coordendadas para serem chutadas tornando assim o jogo bem mais divertido e dinâmico.
 
