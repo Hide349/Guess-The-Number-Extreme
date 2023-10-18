@@ -10,8 +10,8 @@
 - [Ferramentas](#hammer-ferramentas)
 - [Clonar](#recycle-clonar)
 - [Cronômetro](#stopwatch-cronômetro)
-- [Chutes](#input_numbers-chutes)
-- [Alternando-Jogadores](#a_button_blood_type_-alternando-jogadores)
+- [Chutes](#1234-chutes)
+- [Alternando-Jogadores](#a-alternando-jogadores)
 - [Somador-de-Coordenadas](#plus-somador-de-coordenadas)
 - [Fim-de-Jogo](#video_game-fim-de-jogo)
 ## :books: Sobre
@@ -40,7 +40,7 @@ Projeto feito para disciplina de circuitos digitais do professor Ramon Santos na
 ```
 
 
-## :question_mark: Por onde começar?
+## :question: Por onde começar?
 <p>Existem vários caminhos possíveis para concluir o projeto, o que eu escolhi dá o primeiro passo montando a tela que será apresentada para os jogadores, depois fazendo o cronômetro,chutes de x e y, alternador de jogadores, números aleatórios e fim de jogo<p>
 
 
@@ -81,7 +81,7 @@ Repetindo a lógica faríamos mais três desses, em que dois seriam de 5 até 0(
 
 
 
-## :input_numbers: Chutes 
+## :1234: Chutes 
 
 <p>O jogo precisa de duas coordenas. O jogador chuta essas duas e então é informado se a soma delas é igual, menor ou maior que as soma das coordenas geradas.Bom, para fazer isso precisaremos de uma máquina de três estados, para assim termos o estado chutando x, chutando y e verificando. Isso para ambos o jogadores claro.</p>
 
@@ -105,7 +105,7 @@ O primeiro estado seria o chutando x, com o and dois barrado (00), o segundo est
 <p>
 <p>Um valor com 4 bits será passado, o que precisamos fazer é direcionalo para o flip flop correto. Por isso, o clock dele, ou seja, oque decide se ele pode ser ou não atualizado é um and que consiste do estado dele, um not verificado(apenas por garantia) e o botão chutar. Isso garante que apenas seja atualizado o valor quando estiver no estado correto e o botão chutar for pressioando.<b>A mesma coisa vale para y</b>.Depois disso é só mostrar o valor, fazendo com que o bit a3 seja o negativo ou positivo</p>
 
-## :a_button_blood_type_: Alternando Jogadores
+## :a: Alternando Jogadores
 
 <p>Para alternar entre dois jogadores teremos que utilizar dois flips flops, mas por que se são só dois estados? Na verdade, é importante lembrar que cada jogador tem o estado chutando x e chutando y. Então na verdade são 4 estados.</p>
 
