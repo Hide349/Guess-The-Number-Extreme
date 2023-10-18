@@ -7,12 +7,13 @@
 ## Índice
 
 - [Sobre](#books-Sobre)
-- [Ferramentas](#hammerferramentas)
+- [Ferramentas](#hammer-ferramentas)
 - [Clonar](#recycle-clonar)
-
-
-
-
+- [Cronômetro](#stopwatch-cronômetro)
+- [Chutes](#input_numbers-chutes)
+- [Alternando-Jogadores](#a_button_blood_type_-alternando-jogadores)
+- [Somador-de-Coordenadas](#plus-somador-de-coordenadas)
+- [Fim-de-Jogo](#video_game-fim-de-jogo)
 ## :books: Sobre
 
 Uma versão melhorada do primeiro projeto, (https://github.com/Hide349/Projeto_Circuitos_Digitais). Nesse jogo algumas coisas foram adicionadas, como por exemplo um cronômetro, placar, valores negativos e duas coordendadas para serem chutadas tornando assim o jogo bem mais divertido e dinâmico.
@@ -21,7 +22,7 @@ Uma versão melhorada do primeiro projeto, (https://github.com/Hide349/Projeto_C
 
 Projeto feito para disciplina de circuitos digitais do professor Ramon Santos na universidade **Universidade Federal do Cariri**. (https://www.ufca.edu.br/). 
 
-## :hammer:Ferramentas
+## :hammer: Ferramentas
 
 - [Logisim](https://github.com/Logisim-Ita/Logisim)
 - [java](https://www.java.com/pt-BR/)
@@ -39,7 +40,7 @@ Projeto feito para disciplina de circuitos digitais do professor Ramon Santos na
 ```
 
 
-## Por onde começar?
+## :question_mark: Por onde começar?
 <p>Existem vários caminhos possíveis para concluir o projeto, o que eu escolhi dá o primeiro passo montando a tela que será apresentada para os jogadores, depois fazendo o cronômetro,chutes de x e y, alternador de jogadores, números aleatórios e fim de jogo<p>
 
 
@@ -53,7 +54,7 @@ Copiando a tela, a nossa ficará desse jeito.
 
 <img src="./assets/tela1.png">
 
-## Cronômetro
+## :stopwatch: Cronômetro
 
 Com a tela montada, precisaremos criar cada componente dela para que o jogo funcione.Portanto, começaremos com o cronômetro.Para monta-lo, utilizaremos de quatro unidade de memória flip flop do tipo d, um somador e vários túneis
 
@@ -80,7 +81,7 @@ Repetindo a lógica faríamos mais três desses, em que dois seriam de 5 até 0(
 
 
 
-## Chutes de x e y
+## :input_numbers: Chutes 
 
 <p>O jogo precisa de duas coordenas. O jogador chuta essas duas e então é informado se a soma delas é igual, menor ou maior que as soma das coordenas geradas.Bom, para fazer isso precisaremos de uma máquina de três estados, para assim termos o estado chutando x, chutando y e verificando. Isso para ambos o jogadores claro.</p>
 
@@ -104,7 +105,7 @@ O primeiro estado seria o chutando x, com o and dois barrado (00), o segundo est
 <p>
 <p>Um valor com 4 bits será passado, o que precisamos fazer é direcionalo para o flip flop correto. Por isso, o clock dele, ou seja, oque decide se ele pode ser ou não atualizado é um and que consiste do estado dele, um not verificado(apenas por garantia) e o botão chutar. Isso garante que apenas seja atualizado o valor quando estiver no estado correto e o botão chutar for pressioando.<b>A mesma coisa vale para y</b>.Depois disso é só mostrar o valor, fazendo com que o bit a3 seja o negativo ou positivo</p>
 
-## Alternando Jogadores
+## :a_button_blood_type_: Alternando Jogadores
 
 <p>Para alternar entre dois jogadores teremos que utilizar dois flips flops, mas por que se são só dois estados? Na verdade, é importante lembrar que cada jogador tem o estado chutando x e chutando y. Então na verdade são 4 estados.</p>
 
@@ -124,7 +125,7 @@ O jogador só será alternado quando ele já tiver feito dois chutes, ou seja, e
 
 <p>Os bits 0,1,2,3 podem receber ou valores de an ou bn. Para isso utilizaremos 4 portas or.Bom, para a0,a1,a2,a3 serem passados o jogador a tem que estar jogando e a mesma lógica vale para o jogador b.Por isso a sequência de portas and.Depois é só mostrar os valores que estão sendo passados</p>
 
-## Somador de coordenadas
+## :plus: Somador de coordenadas
 
 <p>Com as coordenadas em mãos temos que soma-las e checar se sua soma é maior,igual ou menor que as que foram geradas aleatoriamente</p>
 
@@ -181,7 +182,7 @@ Para fazer o placar é necessário apenas um flip flop do tipo d para guadar o v
 <img src="./assets/placar.png">
 
 
-## Fim de jogo
+# :video_game: Fim de jogo
 
 O jogo tem duas condições para acabar, ou o tempo dos dois jogadores chega em zero ou um deles chega a 15 no placar.Primeiro iremos fazer quando o tempo acabar.
 
