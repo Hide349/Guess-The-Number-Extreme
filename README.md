@@ -221,5 +221,9 @@ Agora que o jogo chegou o fim basta comparar para saber quem foi o campeão.
 
 # Jogo completo
 
-Com tudo feito agora podemos aproveitar a gameplay.
+<p align="center"><b>Com tudo feito agora podemos aproveitar a gameplay.<b></p>
 
+<h2 align="center"/>
+    <img src="./assets/game.gif" width="400" heigth="200" />
+
+</h2>
