@@ -2,8 +2,7 @@
     <p align="center">Guess The Number Extreme</p>
 
 <h2 align="center">
-    <img src="./assets/game.gif" width="400" heigth="200" />
-
+    <img src="./assets/game.gif" width="400" heigth="200"/>
 </h2>
 
 </h1>
