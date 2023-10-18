@@ -1,12 +1,11 @@
 <h1 align="center">
     <p align="center">Guess The Number Extreme</p>
 
+</h1>
+
 <h2 align="center">
     <img src="./assets/game.gif" width="400" heigth="200"/>
 </h2>
-
-</h1>
-
 
 ## Índice
 
