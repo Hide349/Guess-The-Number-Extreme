@@ -1,6 +1,11 @@
 <h1 align="center">
     <p align="center">Guess The Number Extreme</p>
 
+<h2 align="center"/>
+    <img src="./assets/game.gif" width="400" heigth="200" />
+
+</h2>
+
 </h1>
 
 
@@ -12,7 +17,7 @@
 - [Cronômetro](#stopwatch-cronômetro)
 - [Chutes](#1234-chutes)
 - [Alternando-Jogadores](#a-alternando-jogadores-b)
-- [Somador-de-Coordenadas](#plus-somador-de-coordenadas)
+- [Somador-de-Coordenadas](#heavy_plus_sign-somador-de-coordenadas)
 - [Fim-de-Jogo](#video_game-fim-de-jogo)
 ## :books: Sobre
 
@@ -67,6 +72,18 @@ Cada flip flop é responsável por guadar um bit, um cronômetro são basicament
 **Resumindo** : Esse seria um contador que vai de 9 até 0 e quando chega em zero volta para o nove. E o próximo contador teria um pulso de clock para decrementar uma unidade.
 
 Repetindo a lógica faríamos mais três desses, em que dois seriam de 5 até 0( **dezenas** ) e mais um de 9 até 0( **unidades** ).
+
+#### Configurar
+
+Com o botão configurar pressioando nós poderemos setar o tempo que os jogadores terão e também resetar o jogo para o estado inicial. Para isso precisaremos de um flip flop do tipo d que seja um quando o botão configurar for pressinado.
+
+<img src="./assets/configurar.png">
+
+<p>Com o estado de configurar ligado o jogo é pausado e assim o jogador poderá configurar os valores do cronômetro.</p>
+
+<img src="./assets/clock.png">
+
+<p>Cada botão quando pressionado uma vez é equivalente a um pulso de clock, por isso o clock ,ou seja, o que faz o valor ser decrementado é o clock normal ou um pulso único que é gerado pelo botão presionado.</p>
 
 #### Partes restantes
 
@@ -125,7 +142,7 @@ O jogador só será alternado quando ele já tiver feito dois chutes, ou seja, e
 
 <p>Os bits 0,1,2,3 podem receber ou valores de an ou bn. Para isso utilizaremos 4 portas or.Bom, para a0,a1,a2,a3 serem passados o jogador a tem que estar jogando e a mesma lógica vale para o jogador b.Por isso a sequência de portas and.Depois é só mostrar os valores que estão sendo passados</p>
 
-## :plus: Somador de coordenadas
+## :heavy_plus_sign: Somador de coordenadas
 
 <p>Com as coordenadas em mãos temos que soma-las e checar se sua soma é maior,igual ou menor que as que foram geradas aleatoriamente</p>
 
@@ -225,7 +242,3 @@ Agora que o jogo chegou o fim basta comparar para saber quem foi o campeão.
 
 <p align="center"><b>Com tudo feito agora podemos aproveitar a gameplay.<b></p>
 
-<h2 align="center"/>
-    <img src="./assets/game.gif" width="400" heigth="200" />
-
-</h2>
