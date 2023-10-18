@@ -152,3 +152,74 @@ A lógica para faze-lo é simples, o processo é o padrão no entanto a3 e b3 s�
 
 Utilizaremos o gerador de número aleatório oferecido pelo logisim, apenas o modificaremos para mudar o valor toda vez que um jogador acertar.
 
+<img src="./assets/random.png">
+
+<p>Um novo valor deve ser gerado apenas quando o jogador que acertou apertar o botão próximo, para isso utilizaremos o enable do componente.O enable faz com que o componente funcione ou não e com isso podemos fazer com que o clock sendo próximo só gere um valor aleatório caso o jogador tenha acertado o número.</p>
+
+#### Mas o que faz o jogador acertar?
+
+No projeto pede que para que o jogador acerte ele tenha que chutar exatamente as mesmas coordenadas que foram geradas aleatoriamente.Na minha opnião isso dificulta demais o jogo e acaba o deixando um pouco monótono. Por isso fiz com que se acertar apenas a soma um ponto será contado mas ainda deixare a primeira lógica a disposição.
+
+<img src="./assets/hard.png">
+
+para fazer funcionar basta ligar os cabos.
+
+## Comparando os valores
+
+<p>Para comparar os valore utilizaremos o comparador que foi feito no projeto passado, mudando que o botão jogar agora vai ser o estado verificando.</p>
+
+<img src="./assets/comparando.png">
+
+<p>Para comparar basta somar as coordenadas geradas aleatoriamente e comparar com a soma dos coordenadas chutadas, caso seja igual quer dizer que o jogador acertou (<b>pelo menos no meu modo</b>).</p>
+
+
+## Placar
+
+Para fazer o placar é necessário apenas um flip flop do tipo d para guadar o valor e um somador que irá incrimentar 1 toda vez que o jogador acertar.
+
+<img src="./assets/placar.png">
+
+
+## Fim de jogo
+
+O jogo tem duas condições para acabar, ou o tempo dos dois jogadores chega em zero ou um deles chega a 15 no placar.Primeiro iremos fazer quando o tempo acabar.
+
+
+### turnout
+
+O tempo de um jogador acaba quando todos os contadores do seu cronômetro chegam a zero simultaneamente e claro, ele já tenha jogado uma vez.
+
+<img src="./assets/zerou.png">
+
+<p></p>
+
+Essa seria a condição que indicaria que um contador chegou a zero, repetindo isso para todos os contadores teríamos a condição de a zerou.
+
+<img src="./assets/turnouta.png">
+
+O tempo de a começaria zerado caso não tivesse a condição jogando.
+
+<img src="./assets/jogando.png">
+
+Com isso o tempo de a só zera caso ele tenha inicado o jogo, a mesma lógica de zerar vale para b.
+
+### Endgame
+
+Com o turnout de a e b podemos chegar a condição de fim de jogo.
+
+<img src="./assets/endgame.png">
+
+e a outra condição seria quando o placar de a ou b forem iguais a 15.
+
+## Comparar placar
+
+Agora que o jogo chegou o fim basta comparar para saber quem foi o campeão.
+
+<img src="./assets/compararplacar.png">
+
+
+
+# Jogo completo
+
+Com tudo feito agora podemos aproveitar a gameplay.
+
