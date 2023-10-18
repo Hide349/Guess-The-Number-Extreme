@@ -7,7 +7,8 @@
 ## Índice
 
 - [Sobre](#books-Sobre)
-
+- [Ferramentas](#hammerferramentas)
+- [Clonar](#recycle-clonar)
 
 
 
@@ -20,12 +21,12 @@ Uma versão melhorada do primeiro projeto, (https://github.com/Hide349/Projeto_C
 
 Projeto feito para disciplina de circuitos digitais do professor Ramon Santos na universidade **Universidade Federal do Cariri**. (https://www.ufca.edu.br/). 
 
-## Ferramentas
+## :hammer:Ferramentas
 
 - [Logisim](https://github.com/Logisim-Ita/Logisim)
 - [java](https://www.java.com/pt-BR/)
 
-## Clonar
+## :recycle: Clonar
 
 
 ```bash
